@@ -1,0 +1,10 @@
+
+[terminal.shell]
+program = "C:\\Program Files\\Git\\bin\\bash.exe"
+args = ["--login", "-i"]
+
+[keyboard]
+bindings = [
+  { key = "Backspace", mods = "Control", chars = "\u0017" },
+  { key = "H", mods = "Alt", chars = "\u0015" }
+]
