@@ -1,5 +1,10 @@
 # alacritty-config
 
+> **Branches:** `main` tracks the Windows config (Git Bash shell, `...NFM`
+> font family). `macos` tracks the macOS config (no shell override, `...Nerd
+> Font Mono` family). `starship.toml` is shared and kept identical on both —
+> mirror any prompt change to the other branch.
+
 My [Alacritty](https://alacritty.org) terminal config — the
 [carbonfox](https://github.com/EdenEast/nightfox.nvim) palette, JetBrainsMono
 Nerd Font, and a matching [Starship](https://starship.rs) prompt.
