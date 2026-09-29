@@ -96,10 +96,10 @@ effect.
 
 ## Prompt: Starship
 
-`starship.toml` is a two-line powerline prompt in the same carbonfox palette as
-`alacritty.toml`: a blue path segment, a purple git branch/status segment, a
-grey language-version segment, right-aligned command duration, and a green/red
-`❯` on its own line.
+`starship.toml` is a two-line powerline prompt in the same Claude-inspired
+palette as `alacritty.toml`: a terracotta path segment, a lavender git
+branch/status segment, a grey language-version segment, right-aligned command
+duration, and a green/red `❯` on its own line.
 
 It needs the Nerd Font above — the segment separators and icons are Nerd Font
 glyphs and render as tofu without it.

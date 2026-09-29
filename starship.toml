@@ -7,7 +7,7 @@ $directory\
 $git_branch$git_status\
 [](fg:bg_git bg:bg_lang)\
 $nodejs$python$rust$golang$java$c$php$ruby\
-[▶](fg:bg_lang)\
+[▶](fg:bg_dir)\
 $fill\
 $cmd_duration\
 $line_break\
@@ -15,18 +15,18 @@ $character"""
 
 add_newline = true
 
-palette = "carbonfox"
+palette = "claude"
 
-[palettes.carbonfox]
-bg_dir = "#78a9ff"
-bg_git = "#be95ff"
-bg_lang = "#353535"
-fg_dark = "#161616"
-fg_light = "#f2f4f8"
-grey = "#6a6a6a"
-green = "#25be6a"
-red = "#ee5396"
-yellow = "#08bdba"
+[palettes.claude]
+bg_dir = "#D97757"
+bg_git = "#6A9BCC"
+bg_lang = "#141413"
+fg_dark = "#141413"
+fg_light = "#FAF9F5"
+grey = "#B0AEA4"
+green = "#788C5D"
+red = "#CC785C"
+yellow = "#D4A27F"
 
 [directory]
 style = "fg:fg_dark bg:bg_dir bold"
