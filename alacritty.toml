@@ -1,31 +1,28 @@
 
-[terminal.shell]
-program = "C:\\Program Files\\Git\\bin\\bash.exe"
-args = ["--login", "-i"]
-
 [keyboard]
 bindings = [
   { key = "Backspace", mods = "Control", chars = "\u0017" },
-  { key = "H", mods = "Alt", chars = "\u0015" }
+  { key = "H", mods = "Alt", chars = "\u0015" },
+  { key = "Return", mods = "Shift", chars = "\u001B\r" }
 ]
 
 [font]
 size = 10
 
 [font.normal]
-family = "JetBrainsMonoNL NFM"
+family = "JetBrainsMonoNL Nerd Font Mono"
 style = "Regular"
 
 [font.bold]
-family = "JetBrainsMonoNL NFM"
+family = "JetBrainsMonoNL Nerd Font Mono"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMonoNL NFM"
+family = "JetBrainsMonoNL Nerd Font Mono"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrainsMonoNL NFM"
+family = "JetBrainsMonoNL Nerd Font Mono"
 style = "Bold Italic"
 
 # Nightfox Alacritty Colors
