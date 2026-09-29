@@ -93,3 +93,54 @@ Alacritty reads its config from:
 
 Config changes are hot-reloaded; restart the terminal if one does not take
 effect.
+
+## Prompt: Starship
+
+`starship.toml` is a two-line powerline prompt in the same carbonfox palette as
+`alacritty.toml`: a blue path segment, a purple git branch/status segment, a
+grey language-version segment, right-aligned command duration, and a green/red
+`❯` on its own line.
+
+It needs the Nerd Font above — the segment separators and icons are Nerd Font
+glyphs and render as tofu without it.
+
+### Install Starship
+
+```powershell
+winget install --id Starship.Starship   # Windows
+```
+
+```bash
+brew install starship                   # macOS
+curl -sS https://starship.rs/install.sh | sh   # Linux
+```
+
+### Config
+
+Starship reads `~/.config/starship.toml` on every platform, so copy this
+repo's file there:
+
+```bash
+mkdir -p ~/.config && cp starship.toml ~/.config/starship.toml
+```
+
+### Shell init
+
+`alacritty.toml` launches Git Bash with `--login`, which sources
+`~/.bash_profile` but *not* `~/.bashrc`, so both files are needed on Windows:
+
+```bash
+# ~/.bash_profile
+[ -f ~/.bashrc ] && . ~/.bashrc
+```
+
+```bash
+# ~/.bashrc
+export PATH="$PATH:/c/Program Files/starship/bin"
+eval "$(starship init bash)"
+```
+
+The `PATH` line is Windows-only — the winget MSI installs to
+`C:\Program Files\starship\bin`, which Git Bash does not pick up on its own. On
+macOS and Linux only the `eval` line is needed, in `~/.bashrc` or `~/.zshrc`
+(`starship init zsh`).
